@@ -7,10 +7,10 @@
 #include <string.h>
 
 class HomeInsurancePolicy : public InsurancePolicy {
-    public:
-        std::string insurance_level;
+    protected:
         std::string insurance_object;
 
+    public:
         HomeInsurancePolicy(std::string name, std::string number, std::string object_name);
 
         void setObcjectName(std::string object_name);
