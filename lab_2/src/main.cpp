@@ -65,7 +65,7 @@ void displayPolicy(std::vector<InsurancePolicy*>& policies, std::string number) 
     bool check_flag = false;
 
     for (auto policy : policies) {
-        if (policy->policy_number == number) {
+        if (policy->getpolicyNumber() == number) {
             policy->displayInfo();
             check_flag = true;
         }
@@ -192,7 +192,7 @@ int performAction(std::vector <InsurancePolicy*>& policies, std::string surname)
     int count {};
 
     for (int index = 0; index < policies.size(); index++) {
-        if (policies[index]->holder_name.find(surname)) {
+        if (policies[index]->getholderName().find(surname)) {
             count += 1;
         }
     } return count;
