@@ -140,7 +140,7 @@ void changeParams(std::vector <InsurancePolicy*>& policies) {
 
     if (index != 0 && dynamic_cast<HomeInsurancePolicy*>(policies[index])) {
 
-            HomeInsurancePolicy* homepol = dynamic_cast<HomeInsurancePolicy*>(policies[index]);
+        HomeInsurancePolicy* homepol = dynamic_cast<HomeInsurancePolicy*>(policies[index]);
         
         std::cout << "\nДоступные параметры для изменения: " << "\n"
                   << "1 - Владелец полиса" << "\n"
