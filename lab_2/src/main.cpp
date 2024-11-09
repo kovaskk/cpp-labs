@@ -16,9 +16,9 @@ void displayMenu() {
 }
 
 void createPolicy(std::vector <InsurancePolicy*>& policies) {
-    std::string name{};
-    std::string number{};
-    std::string level{};
+    std::string name;
+    std::string number;
+    std::string level;
 
     char choice {};
     std::cout << "\nДоступно 2 вида полиса: 1 - полис медицинского страхования; "
