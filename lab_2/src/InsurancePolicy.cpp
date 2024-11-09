@@ -20,4 +20,10 @@ void InsurancePolicy::changepolicyNumber(std::string new_number) {
     policy_number = new_number;
 }
 
+std::string InsurancePolicy::getholderName() {
+    return holder_name;
+}
 
+std::string InsurancePolicy::getpolicyNumber() {
+    return policy_number;
+}
