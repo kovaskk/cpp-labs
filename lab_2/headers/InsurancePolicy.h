@@ -6,8 +6,8 @@
 
 class InsurancePolicy {
     protected:
-        std::string holder_name {};
-        std::string policy_number {};    
+        std::string holder_name;
+        std::string policy_number;    
         InsurancePolicy(std::string& name, std::string& number);
 
     public:
