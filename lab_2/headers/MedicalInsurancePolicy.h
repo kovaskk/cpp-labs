@@ -8,9 +8,11 @@
 
 class MedicalInsurancePolicy : public InsurancePolicy {
 
+    protected:
+        std::string insurance_level;
+
     public: 
         MedicalInsurancePolicy(std::string name, std::string number, std::string level);
-        std::string insurance_level {};
         
         void setInsuranceLevel(std::string level);
         void displayInsuranceLevel();
