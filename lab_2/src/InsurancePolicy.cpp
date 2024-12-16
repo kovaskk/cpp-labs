@@ -25,5 +25,5 @@ std::string InsurancePolicy::getholderName() {
 }
 
 std::string InsurancePolicy::getpolicyNumber() {
-    return policy_number;
+    return policy;
 }
